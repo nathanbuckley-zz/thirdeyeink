@@ -1,0 +1,31 @@
+{
+  "name": "thirdeyesite",
+  "version": "0.0.1",
+  "description": "third eye ink site (Main site re jig)",
+  "private": true,
+  "scripts": {
+    "minmaincss": "echo '🚧  Minifying main css 🚧\n' && cleancss src/css/main.css -o src/css/main.min.css && echo '💾  SAVED \n' ",
+    "minmodalcss": "echo '🚧  Minifying modal css 🚧\n' && cleancss src/css/modal.css -o src/css/modal.min.css && echo '💾  SAVED \n' ",
+    "webpack": "echo '🚧 Its webpack packing time 🚧\n'&& npx webpack --config webpack.config.js",
+    "build": "echo '🚧  Running Build Process 🚧 \n' && npm run minmaincss && npm run webpack && echo '💾  Built \n'",
+    "look": "echo '🚧  Opening in Default Browser (Lets have a look) 🚧 \n' && npm run build -s && echo '3⃣ \n' && sleep 1 && echo '2️⃣ \n' && sleep 1 && echo '1️⃣ \n' && sleep 1 && echo '☠️  🗝 open sesame ☠️ \n' && http-server ./dist -p 1337 -o",
+    "open": "npm run look -s"
+  },
+  "author": "nathanbuckley",
+  "license": "MIT",
+  "devDependencies": {
+    "clean-css-cli": "^4.1.11",
+    "css-loader": "^1.0.0",
+    "file-loader": "^2.0.0",
+    "jshint": "^2.9.5",
+    "style-loader": "^0.23.0",
+    "uglify-js": "^3.3.13",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "macy": "^2.3.1",
+    "tingle.js": "^0.13.2",
+    "vivus": "^0.4.4"
+  }
+}

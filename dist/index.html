@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Personal and projects github pages page">
+        <meta name="author" content="Nathan A Buckley">
+
+        <title>3rdIink</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Unica+One|Rajdhani|Miltonian" rel="stylesheet">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+    </head>
+
+    <body>
+
+        <!--**************** NAV ****************-->
+
+        <div class="navbox">
+
+            <div id="navlogo"></div>
+            
+            <div id="navlinks">
+                <button class="navbutt" id="essayNavbtn">Essays</button>
+                <button class="navbutt" id="galNavbtn">Gallery</button>
+                <button class="navbutt" id="projNavbtn">Projects</button>
+                <button class="navbutt" id="contNavbtn">Contact</button>
+            </div>
+
+            <div id="navbottom">
+                <div id="navtxt">
+                    made with <img src="img/heart.png" alt="Love"> by @nathanbuckley.
+                </div>
+                <a href="https://github.com/nathanbuckley"><i class="fab fa-github fa-2x"></i></a>
+                <a href="https://github.com/nathanbuckley"><i class="fab fa-youtube fa-2x"></i></a>
+                <a href="https://www.instagram.com/thirdeyeinkart"><i class="fab fa-instagram fa-2x"></i></a>
+            </div>
+        </div>
+
+        <div id="navback"></div>
+
+        <div id="cont">
+            <!--**************** HOME ****************-->
+            <div id="home">
+                <div id="geo"></div>
+
+                <div id="headname">THIRD EYE INK</div>
+
+            </div>
+
+            <!-- ************* ESSAYS ************** -->
+
+            <div class="essay" id="ess">
+            
+                <div class="titles"><h2>Essays</h2></div>
+                <div id="esscont"></div>
+            </div>
+
+            <!-- ************* GALLERY ************** -->
+
+            <div class="gallery" id="gal">
+            
+                <div class="titles"><h2>Gallery</h2></div>
+                <div id="galcont"></div>            
+            </div>
+
+            <!-- ************* PROJECTS ************** -->
+
+            <div class="project" id="proj">
+            
+                <div class="titles"><h2>Projects</h2></div>
+                <div id="projcont"></div>
+            </div>
+
+            <!-- ************ CONTACT FORM ************ -->
+
+            <div class="contact" id="contact">
+                <div class="titles"><h2>Contact</h2></div>
+
+                <div id="contacttxt">
+                    Interested in learning more, have a work enquiry or would like 
+                    to collab on a project? Do not hesitate to get in touch using the 
+                    form below or any linked social platform.
+                </div>
+            
+                <form id="form" action="https://formspree.io/nth.buckley@gmail.com" method="POST">
+                    <input type="text" id="fname" name="name" placeholder="Name"/>    
+                    <input type="email" id="femail" name="email" placeholder="Email"/>
+                    <textarea id="fmsg" name="message" placeholder="Message" style="height:170px"></textarea>
+                    <input type="hidden" name="_subject" value="Someone Wants to talk!!!"/>
+                    <input type="hidden" name="_next" value=""/>
+                    <input type="text" name="_gotcha" style="display:none"/>
+                    <div id="fsub"><input type="submit" value="Submit"></div>
+                </form>
+            </div>
+
+            <button id="topbtn" title="To top"><i class="fas fa-angle-double-up fa-4x"></i></button>
+
+        </div>
+
+        <!-- CORE/webpacked JS -->
+        <script src="main.js"></script>
+
+    </body>
+</html>

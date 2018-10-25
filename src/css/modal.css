@@ -1,0 +1,17 @@
+.modal {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.modal .tingle-modal-box {
+    background-color: white;
+}
+
+.modal .tingle-modal-box__footer {
+    background-color: #36384c;
+}
+
+.modal .tingle-btn {
+    float: right;
+    font-weight: bold;
+}
