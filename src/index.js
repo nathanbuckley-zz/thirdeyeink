@@ -8,6 +8,9 @@ import './css/main.min.css';
 import './css/modal.min.css';
 import './css/tingle.min.css';
 
+//Gallery Posts
+import './js/galposts/TextTrackList.js';
+
 // ******** Nav Scrolling ********
 var essay = document.getElementById("essayNavbtn");
 var gallery = document.getElementById("galNavbtn");
