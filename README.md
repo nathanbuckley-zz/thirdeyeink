@@ -64,4 +64,5 @@ Dependancies
 
 Thanks
 --------
+All persons and contributors that make all this projects dependancies possable (Listed above).
 :octocat: GitHub and the team behind [GitHub Pages](https://pages.github.com/)

@@ -7,9 +7,10 @@ import Vivus from 'vivus';
 import './css/main.min.css';
 import './css/modal.min.css';
 import './css/tingle.min.css';
+import './css/galpost.min.css';
 
 //Gallery Posts
-import './js/galposts/TextTrackList.js';
+import './js/galposts/test.js';
 
 // ******** Nav Scrolling ********
 var essay = document.getElementById("essayNavbtn");
@@ -59,9 +60,9 @@ var mainanimation = new Vivus('geo',
     {
     type: 'scenario-sync',
     file: 'img/geo.svg',
-    duration: 800, 
+    duration: 600, 
     delay: 0,
-    pathTimingFunction: Vivus.EASE_OUT,
+    pathTimingFunction: Vivus.EASE_IN,
     forceRender: true,
     reverseStack: true
 });
