@@ -1,6 +1,6 @@
 
 //Libs
-import 'tingle.js';
+import tingle from 'tingle.js';
 import Vivus from 'vivus';
 
 //Styles
@@ -107,22 +107,7 @@ function randomBtnChoice(){
     return rbc;
 }
 
-// ******** Temp Secret Modal ********
+// secret modal
 
-var modal = document.querySelector(".modal");
-var trigger = document.querySelector(".modalTrigger");
-var closeButton = document.querySelector(".close-button");
 
-function toggleModal(){
-    modal.classList.toggle("show-modal");
-}
-
-function windowOnClick(event){
-    if (event.target === modal){
-        toggleModal();
-    }
-}
-
-trigger.addEventListener("click", toggleModal);
-closeButton.addEventListener("click", toggleModal);
-window.addEventListener("click", windowOnClick);
+let hrt = document.getElementById('pxlhrt');
