@@ -94,7 +94,7 @@ function randomBtnChoice(){
     
     var footerBtnChoices = ['Finished',
                             'Done',
-                            'Complete',
+                            'Compvare',
                             'Terminate',
                             'Abolish',
                             'Abort',
@@ -110,4 +110,4 @@ function randomBtnChoice(){
 // secret modal
 
 
-let hrt = document.getElementById('pxlhrt');
+var hrt = document.getElementById('pxlhrt');

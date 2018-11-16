@@ -12,13 +12,20 @@ module.exports = {
   optimization: {
     minimizer: [
       new UglifyJsPlugin({
-      parallel: true,
       extractComments: true,
       uglifyOptions: {
-        mangle: true,
-        keep_fnames: true
-        }
-      })
+        mangle: false,
+        compress:{
+          collapse_vars: false,
+          drop_console: true,
+          inline: false,
+          join_vars: false,
+          reduce_funcs: false,
+          reduce_vars: false,
+          unused: false
+        },
+        keep_fnames: true,
+      }})
     ]
   },
   module: {
